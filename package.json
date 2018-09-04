@@ -1,0 +1,31 @@
+{
+  "name": "atelierduvoyage",
+  "version": "1.0.0",
+  "description": "Atelier du Voyage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gueorgui/atelierduvoyage.git"
+  },
+  "keywords": [],
+  "author": "Gueorgui Tcherednitchenko <gueorgui@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gueorgui/atelierduvoyage/issues"
+  },
+  "homepage": "https://github.com/gueorgui/atelierduvoyage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
