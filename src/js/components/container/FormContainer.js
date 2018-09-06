@@ -7,7 +7,7 @@ class FormContainer extends Component {
     super();
 
     this.state = {
-      seo_title: ''
+      seo_title: 'Test'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,6 +18,7 @@ class FormContainer extends Component {
   };
 
   render() {
+    const { seo_title } = this.state;
     return(
       <form id="article-form">
         <Input
@@ -34,3 +35,6 @@ class FormContainer extends Component {
 }
 
 export default FormContainer;
+
+const wrapper = document.getElementById('create-article-form');
+wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
