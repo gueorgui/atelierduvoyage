@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Input from '../presentational/Input';
 
-class FormContainer extends Component {
+class SiteContainer extends Component {
   constructor() {
     super();
 
@@ -34,7 +34,7 @@ class FormContainer extends Component {
   }
 }
 
-export default FormContainer;
+export default SiteContainer;
 
-const wrapper = document.getElementById('create-article-form');
-wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
+const wrapper = document.getElementById('adv-container');
+wrapper ? ReactDOM.render(<SiteContainer />, wrapper) : false;
