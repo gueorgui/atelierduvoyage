@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Input from '../presentational/Input';
+import Header from '../presentational/Header';
+import Footer from '../presentational/Footer';
+import style from './Site.scss';
 
 class SiteContainer extends Component {
   constructor() {
     super();
 
     this.state = {
-      seo_title: 'Test'
+      seo_title: 'Test',
+      current_menu: 'main'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,9 +22,12 @@ class SiteContainer extends Component {
   };
 
   render() {
-    const { seo_title } = this.state;
+    const { seo_title, current_menu } = this.state;
     return(
-      <form id="article-form">
+      <div className="container">
+        <Header
+          highlight={current_menu}
+        />
         <Input
           text="SEO title"
           label="seo_title"
@@ -29,7 +36,8 @@ class SiteContainer extends Component {
           value={seo_title}
           handleChange={this.handleChange}
         />
-      </form>
+        <Footer />
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './Input.css';
+import style from './Input.scss';
 
 const Input = ({ label, text, type, id, value, handleChange }) =>
   <div className="form-group">
